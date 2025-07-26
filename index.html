@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="/logo.png">
+<title>Spotify - Web Player: Music for everyone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<div class="main">
+    <div class="navigation">
+       <div class="search">
+        <i class="fa-brands fa-spotify"></i>
+        <i class="fa-solid fa-house"></i>
+        <div  class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           <input type="text" placeholder="  What do you want to play?" class="what">
+</div>
+       </div>
+       <div class="navigation-options">
+        <p>Premium</p>
+            <p>Support</p>
+            <p> Download</p>
+            <p style="font-size: 1.5rem;opacity:1">|</p>
+    
+         <button class="badge darkbadge"><i class="fa-regular fa-circle-down"></i> Install App</button>
+         <button class="badge darkbadge">Sign up</button>
+         <button class="badge big">Log in</button>
+       </div>
+        
+    </div>
+     <div class="sidebar"> 
+        
+        <div class="library">
+            <div class="options">
+                <div class="lib-option nav-option">
+                
+                     <a href ="#">Your Library</a>
+               </div>
+               <div class="icons">
+                  <i class="fa-solid fa-plus"></i>
+                  
+               </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+
+                 <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+                <div class="ending-lib">
+                    <div class="first">
+                        <p>Legal</p>
+                        <p>Safety & Privacy Center</p>
+                        <p>Privacy Policy</p>
+                    </div>
+
+                     <div class="first">
+                        <p>Cookies</p>
+                        <p>About Ads</p>
+                        <p>Accessibility</p>
+                    </div>
+
+                     <div class="first" >
+                        <p id="dark-cookie">Cookies</p>
+                    </div>
+                   
+                        <button class="badge darkbadgeend" ><i class="fa-solid fa-globe"></i>English</button>
+                    
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <!-- <div class="sticky-nav">
+            <div class="sticky-nav-icons">
+            <img src="backward_icon.png">
+            <img src="forward_icon.png" class="hide">
+            </div>
+            <div class="sticky-nav-options">
+                 <button class="badge hide">Explore Premium</button>
+                 <button class="badge dark-badge"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                 <i class="fa-solid fa-user" style="font-size: 1.2rem;"></i>
+            </div>
+        
+           
+        </div> -->
+       
+            <h5>Recently Played</h5>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card1img.jpeg">
+                    <p class="card-head">Top-50 Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="soni.jpg">
+                    <p class="card-head">Soni Soni(From "Ishq Vishk Rebound")</p>
+                    <p class="card-info">Drashal Raval,Jonita Gandhi,Rochak Kohli..</p>
+                </div>
+            
+            </div>
+
+            <h5>Trending songs</h5>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card2img.jpeg">
+                    <p class="card-head">mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                 <div class="card">
+                    <img src="sajni.jpg">
+                    <p class="card-head">Sajni(From "Laapataa Ladies")</p>
+                    <p class="card-info">Ram Sampath,Arijit Singh,Prashant Pandey</p>
+                </div>
+            
+           
+                <div class="card">
+                    <img src="sap.jpg">
+                    <p class="card-head">Sapphire</p>
+                    <p class="card-info">Ed Sheeran,Arijit Singh</p>
+                </div>
+            
+               
+                <div class="card">
+                    <img src="saiyaara.jpg">
+                    <p class="card-head">Saiyaara</p>
+                    <p class="card-info">Shawn Mendes</p>
+                </div>
+                <div class="card">
+                    <img src="senorita.jpg">
+                    <p class="card-head">Senorita</p>
+                    <p class="card-info">Shawn Mendes,      Camila Cabello</p>
+                </div>
+               
+                 <div class="card">
+                    <img src="shaky.jpg">
+                    <p class="card-head">Shaky</p>
+                    <p class="card-info">Sanju Rathod,G-SPXRK</p>
+                </div>
+                 <div class="card">
+                    <img src="soni.jpg">
+                    <p class="card-head">Soni Soni(From "Ishq Vishk Rebound")</p>
+                    <p class="card-info">Drashal Raval,Jonita Gandhi,Rochak Kohli..</p>
+                </div>
+                 <div class="card">
+                    <img src="preet.jpg">
+                    <p class="card-head">Preet Re-"From Dhadak 2"</p>
+                    <p class="card-info">Drashal Raval,Rochak Kohli,Jonita Gandhi..</p>
+                </div>
+                 <div class="card">
+                    <img src="jhol.jpg">
+                    <p class="card-head">Jhol-Acoustic</p>
+                    <p class="card-info">Maanu,Annural Kahlid,Abdullah Siddiqui</p>
+                </div>
+                
+            
+            
+           </div>
+
+               <h5>Popular artists</h5>
+                <div class="cards-container">
+                <div class="card round">
+                    <img src="arijit.jpg">
+                    <p class="card-head">Arijit Singh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+
+                <div class="card round">
+                    <img src="atif.jpg">
+                    <p class="card-head">Atif Aslam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+
+                <div class="card round">
+                    <img src="pritam.jpg">
+                    <p class="card-head">Pritam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                 <div class="card round">
+                    <img src="rahman.jpg">
+                    <p class="card-head">A.R. Rahman</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                 <div class="card round">
+                    <img src="sachin.jpg">
+                    <p class="card-head">Sachin Jigar</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+               
+
+
+            
+                  <h5>Featured Charts</h5>
+                <div class="cards-container">
+                <div class="card">
+                    <img src="card5img.jpeg">
+                    <p class="card-head">Top-Songs Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card6img.jpeg">
+                    <p class="card-head">Top-Songs India</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="card1img.jpeg">
+                    <p class="card-head">Top-50 Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+   
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+    <div class="music-player">
+        <div class="album"></div>
+        <div class="player">
+            <div class="player-controls">
+                 <img src="player_icon1.png" class="player-control-icon">
+                 <img src="player_icon2.png" class="player-control-icon">
+                  <img src="player_icon3.png" class="player-control-icon" style="opacity:1;height:2rem">
+                   <img src="player_icon4.png" class="player-control-icon">
+                    <img src="player_icon5.png" class="player-control-icon">
+            </div>
+            <div class="playback-bar">
+                <span class="curr-time">00.00</span> 
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="tot-time">3.32</span> 
+            </div>
+        </div>
+        <div class="control"></div>
+    </div>
+</div>
+</body>
+</html>
